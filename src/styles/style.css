@@ -3,6 +3,7 @@ html, body{
     height: 100%;
     margin: 0px;
     font-size:16px;
+    font-family: urbanist;
 }
 header h1{
     text-align:center;
@@ -46,6 +47,8 @@ button{
     width:100px;
     border-radius: 5px;
     background-color: #A1D0FF;
+    font-family: urbanist;
+
 }
 
 .expenses-container{
@@ -84,4 +87,13 @@ button{
     padding:10px;
     text-align:right;
 }
+
+#total-expenses{
+    background-color: #EBC88D;
+}
+#total-expenses span{
+    background-color: green;
+}
+
+
 
