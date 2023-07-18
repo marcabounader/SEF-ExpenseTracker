@@ -45,7 +45,7 @@ section{
 button{
     width:100px;
     border-radius: 5px;
-    background-color: #EBC88D;
+    background-color: #A1D0FF;
 }
 
 .expenses-container{
@@ -64,7 +64,7 @@ button{
 #expenses-table{
     border: 1px solid black;
     border-radius:5px;
-    background-color: #9E6A11;
+    background-color: #EBC88D;
     border-collapse: collapse;
 
 }
@@ -85,6 +85,3 @@ button{
     text-align:right;
 }
 
-.btn-remove{
-    background-color: #A1D0FF;
-}
