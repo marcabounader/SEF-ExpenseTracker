@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
-        <script src="src/scripts/script.js"></script>
         <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <script src="src/scripts/script.js"></script>
         <link rel="stylesheet" href="src/styles/styles.css">
     </head>
     <body>
@@ -13,21 +13,25 @@
         </head>
         <section>
             <form class="form-container">
-                <div>
-                    <label for="expense-name">Expense Name</label>
-                    <input type="text" id="expense-name" placeholder="Expense name">
-                    <label for="expense-amount">Expense Amount</label>
-                    <input type="amount" id="expense-amount" placeholder="Expense amount">
-                </div>
-                <button id="btn"></button>
+                <label for="expense-name">Expense Name</label>
+                <input type="text" id="expense-name" placeholder="Expense name" required>
+                <div class="error" id="name-error"></div>
+                <label for="expense-amount">Expense Amount</label>
+                <input type="amount" id="expense-amount" placeholder="Expense amount" required>
+                <div class="error" id="amount-error"></div>
             </form>
+            <button id="btn">Add Expense</button>
+
             <div class="expenses-container">
                 <h2>Expenses</h2>
                 <div class="expenses-subcontainer">
-                    <tr>
-                        <th>Name</th>
-                        <th>Amount</th>
-                    </tr>
+                    <table id="expenses-table">
+                        <tr>
+                            <th>Name</th>
+                            <th>Amount</th>
+                        </tr>
+                    </table>
+                    <div id="total-expenses"></div>
                 </div>
             </div>
         </section>
