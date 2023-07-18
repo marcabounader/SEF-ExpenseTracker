@@ -3,7 +3,7 @@ $(document).ready(()=>{
     let expenses_regex= new RegExp('^[0-9]*$');
     create_expense = (name,amount) =>{
         return `  
-        <tr>
+        <tr class="expenses-row">
             <td>${name}</td>
             <td id="amount">${amount}</td>
             <td><button class="btn-remove">remove</button></td>
