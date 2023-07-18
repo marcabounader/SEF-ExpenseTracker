@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
+        <script src="src/scripts/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="src/styles/styles.css">
+    </head>
+    <body>
+        <head>
+            <h1>SEF Expense Tracker</h1>
+        </head>
+        <section>
+            <form class="form-container">
+                <label for="expense-name">Expense Name</label>
+                <input type="text" id="expense-name" placeholder="Expense name">
+                <label for="expense-amount">Expense Amount</label>
+                <input type="amount" id="expense-amount" placeholder="Expense amount">
+                <button id="btn"></button>
+            </form>
+            <div class="expenses-container">
+                <h2>Expenses</h2>
+                <div class="expenses-subcontainer">
+                    <tr>
+                        <th>Name</th>
+                        <th>Amount</th>
+                    </tr>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
