@@ -35,13 +35,13 @@ section{
 }
 
 .form-container label{
-    font-size:20.00 px;
+    /* font-size:20.00 px; */
 }
 .form-container input{
     border-radius: 5px;
 }
 .form-container input::placeholder{
-    font-size:10px
+    font-size:12.80px
 }
 button{
     width:100px;
@@ -57,7 +57,7 @@ button{
 }
 .expenses-container h2{
     text-align:center;
-    font-size:39.06px;
+    font-size:31.25px;
 }
 .expenses-subcontainer{
     display:flex;
@@ -67,12 +67,11 @@ button{
 #expenses-table{
     border: 1px solid black;
     border-radius:5px;
-    background-color: #EBC88D;
     border-collapse: collapse;
 
 }
 .btn-remove{
-    background-color: #A1D0FF;
+    background-color: #EBC88D;
 }
 .expenses-row-title{
     border-bottom: 3px solid black;
@@ -95,6 +94,12 @@ button{
 }
 #total-expenses span{
     color:#4574A3;
+}
+
+footer{
+    text-align:center;
+    background-color: #A1D0FF;
+
 }
 
 
