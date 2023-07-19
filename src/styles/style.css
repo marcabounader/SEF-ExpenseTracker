@@ -64,8 +64,28 @@ button{
     flex-direction: column;
     justify-content: space-between;
     overflow:hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     max-height: 400px;
+}
+.expenses-subcontainer::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgb(34, 134, 234);
+	background-color: #CCCCCC;
+}
+.expenses-subcontainer::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.expenses-subcontainer::-webkit-scrollbar-thumb
+{
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(90deg,
+	                                          rgb(34, 134, 234) 0%,
+											  rgb(34, 134, 234) 25%,
+											  transparent 100%,
+											  rgb(34, 134, 234) 75%,
+											  transparent)
 }
 #expenses-table{
     border: 1px solid black;
@@ -74,11 +94,11 @@ button{
     width:500px;
 }
 .btn-remove{
-    background-color: #EBC88D;
+    background-color: rgb(235, 200, 141);
 }
 .expenses-row-title{
     border-bottom: 3px solid black;
-    background-color: #2286EA;
+    background-color: rgb(34, 134, 234);
 }
 .expenses-row-title th{
     padding:10px;
@@ -97,6 +117,7 @@ button{
 }
 #total-expenses span{
     color:#4574A3;
+    font-weight:bold;
 }
 
 footer{
