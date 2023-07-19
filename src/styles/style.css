@@ -18,7 +18,7 @@ section{
     display:flex;
     flex-direction:column;
     padding: 10px;
-    background-color: #4574A3;
+    background-color: #A1D0FF;
 
 }
 .form-div{
@@ -46,7 +46,7 @@ section{
 button{
     width:100px;
     border-radius: 5px;
-    background-color: #A1D0FF;
+    background-color: #2286EA;
     font-family: urbanist;
 
 }
@@ -71,7 +71,9 @@ button{
     border-collapse: collapse;
 
 }
-
+.btn-remove{
+    background-color: #A1D0FF;
+}
 .expenses-row-title{
     border-bottom: 3px solid black;
     background-color: #2286EA;
@@ -92,7 +94,7 @@ button{
     background-color: #EBC88D;
 }
 #total-expenses span{
-    background-color: green;
+    color:#4574A3;
 }
 
 
