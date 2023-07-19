@@ -23,11 +23,11 @@ $(document).ready(()=>{
                     let new_expense=$(create_expense(expense_name.val(),expense_amount.val()));
                     total+=parseInt(expense_amount.val());
                     expenses_table.append(new_expense);
-                    total_expenses.text(`Total Expenses = ${total}`);
+                    total_expenses.html(`Total Expenses = <span>${total}</span>`);
                     new_expense.find(".btn-remove").click(()=>{
                         new_expense.remove();
                         total-=parseInt(new_expense.find("#amount").text());
-                        total_expenses.text(`Total Expenses = ${total}`);
+                        total_expenses.html(`Total Expenses = <span>${total}</span>`);
                     });
 
                 } else{
